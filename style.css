@@ -93,18 +93,40 @@ section p {
 }
 
 /* Project Cards */
-.project-card {
+.project-card,
+#projects .project {
     background: #f9f9ff;
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.05);
     margin-bottom: 1.5rem;
+    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    width: 300px;
 }
 
-.project-card:hover {
+.project-card:hover,
+#projects .project:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#projects .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#projects .project h3 {
+    color: #2575fc;
+    margin-bottom: 0.5rem;
+}
+
+#projects .project p {
+    color: #555;
+    font-size: 1rem;
 }
 
 /* Contact Form */
@@ -169,5 +191,9 @@ footer {
 
     nav ul li {
         margin: 0.5rem 0;
+    }
+
+    #projects .project {
+        width: 90%;
     }
 }
